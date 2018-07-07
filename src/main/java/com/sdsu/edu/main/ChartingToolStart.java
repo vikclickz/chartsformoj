@@ -54,13 +54,13 @@ class ChartingToolStart {
     JPanel secondPanel = new JPanel();
     JPanel borderPanel2 = new JPanel(false);
 
-    JButton piebtn = new JButton("PIE", new ImageIcon("./src/data/piechartbtn.jpg"));
-    JButton barbtn = new JButton("BAR", new ImageIcon("./src/data/barchartbtn.jpg"));
+    JButton piebtn = new JButton("PIE", new ImageIcon("./src/main/resources/data/piechartbtn.jpg"));
+    JButton barbtn = new JButton("BAR", new ImageIcon("./src/main/resources/data/barchartbtn.jpg"));
 
-    JButton scatterbtn = new JButton("SCATTER", new ImageIcon("./src/data/linear_reg.png"));
-    JButton nonLinearBtn = new JButton("NLNR", new ImageIcon("./src/data/nonlinear.png"));
-    JButton polyBtn = new JButton("POLY", new ImageIcon("./src/data/poly_reg.png"));
-    JButton threeDBtn = new JButton("3D", new ImageIcon("./src/data/three_dim.png"));
+    JButton scatterbtn = new JButton("SCATTER", new ImageIcon("./src/main/resources/data/linear_reg.png"));
+    JButton nonLinearBtn = new JButton("NLNR", new ImageIcon("./src/main/resources/data/nonlinear.png"));
+    JButton polyBtn = new JButton("POLY", new ImageIcon("./src/main/resources/data/poly_reg.png"));
+    JButton threeDBtn = new JButton("3D", new ImageIcon("./src/main/resources/data/three_dim.png"));
     List<String> numericList;
     List<String> charList;
     LinearRegressionGUI linearRegressionGUI;
