@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10873b90-a1d7-4171-a3bb-bfffa0339b80" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esri_mo2_esri_mo20_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esri_mo2_esri_mo20img_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esri_mo2_esri_mo20res_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/chartsformoj.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddLyrDialog.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddXYtheme.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Arrow.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AttrTab.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingToolStart.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/CreateShapeDialog.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/CreateXYShapeDialog.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/DemoPanel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/DistanceTool.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Flash.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HelpDialog.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HelpTool.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HotPick.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/MyTableModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/VerticalBarLegendPanel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/XYfeatureLayer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant/ChartType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant/GUILabelConstants.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/ChartController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/MapObjectChartController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/db/DbfReadController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/BarPanelGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/ChartViewFrameGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/LinearRegressionGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/PiePanelGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/PolynomialPanelGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/PowerRegressionGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/ThreeDimensionalPanelGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/model/ChartModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print/PrintUtility.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/BarChartViewController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/ChartViewController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/GenericChartViewController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/PieChartViewController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/11.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/12.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/13.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/14.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/15.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/16.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/17.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/18.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/19.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/20.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/21.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/22.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/23.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/24.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/25.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/26.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/27.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/28.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/29.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/30.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/31.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/32.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/33.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/34.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/35.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/36.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/37.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/38.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/39.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/40.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/41.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/42.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/43.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/44.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/45.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/46.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/47.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/48.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/49.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/50.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/51.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/52.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/53.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/54.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/55.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/56.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/57.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/58.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/59.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/60.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/61.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/62.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/63.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/64.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/65.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/9.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/BADTRIAL.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/BADTRIAL.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS.DBF" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS.SBN" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS.SBX" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS.SHP" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS.SHX" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS_RT.DBF" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS_RT.SBN" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS_RT.SBX" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS_RT.SHP" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/ROADS_RT.SHX" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/cities.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/drainage.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/lakes.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/province.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/rivers.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/roads.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/roads.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/roads_rt.avl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/CanadaSim/roads_rt.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/Icon0915b.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/Ancientharappa.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/Ancientharappa.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/Ancientharappa.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/Ancientharappa_text.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/Ancientharappa_text.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/Ancientharappa_text.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/HarappaCities.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/HarappaCities.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/HarappaCities.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/harappa.dxf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/harappaop.dxf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_1.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_1.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_1.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_1_text.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_1_text.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_1_text.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_harappa.dxf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_harappa_Copy1.dxf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_harappasri.dxf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_sukesh3.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_sukesh3.dxf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_sukesh3.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_sukesh3.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_sukesh3_Model.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_text.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_text.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_text.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/india_updatedl.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/India/~tmpa2c~.dwg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/Montana.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/Montana.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/Montana.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/albers.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/albers.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/albers.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/albers.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/albers.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/capitals.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/capitals.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/capitals.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/capitals.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/codemog.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/cotermUS.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/cotermUS.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/cotermUS.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/cotermUS.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/cotermUS.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/counties.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/counties.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/counties.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/counties.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/counties.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/counties.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/states.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/states.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/states.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/states.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/texas.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/texas.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/texas.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/usapoint.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/ushigh.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/ushigh.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/ushigh.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/ushigh.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/ushigh.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/ushigh.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/uslakes.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/uslakes.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/uslakes.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/uslakes.sbx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/uslakes.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USA/uslakes.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USStateMap.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USStateMap.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/USStateMap.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/addtheme.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/badbad.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/badbad.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/barchartbtn.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/c.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/c.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/chart.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/chart16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/cricket-logo_icon.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/delete.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/demote.JPG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/help2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/helptopic.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/hotlink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/hotlink32.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/hotlink_32x32-32.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/linear_reg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/measure_1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/nonlinear.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/piechartbtn.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/pointer.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/poly_reg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/polyregression.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/print.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/promote.JPG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/properties.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/santhosh.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/santhosh.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/scatter-plot.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/scatterPlot.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/scatterplot3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/states.dbf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/states.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/states.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/states.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/tableview.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/three_dim.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/threed.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/trial5.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/trial5.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/usct.prj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/usct.sbn" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/usct.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/usct.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/zone1.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/zone1.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/zone2.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/zone2.shx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/zone3.shp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data/zone3.shx" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test">
+      <favorite_root url="file://$PROJECT_DIR$" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/src" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/src/main" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/src/main/java" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/src/main/java/com" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/BarPanelGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/PiePanelGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/ChartViewFrameGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/PolynomialPanelGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/PowerRegressionGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/LinearRegressionGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/ThreeDimensionalPanelGUI.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/ChartViewController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/BarChartViewController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/PieChartViewController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/GenericChartViewController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/model" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/model/ChartModel.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print/PrintUtility.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant/ChartType.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant/GUILabelConstants.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Arrow.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/db" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                          <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/db/DbfReadController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        </favorite_root>
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/ChartController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/MapObjectChartController.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Flash.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AttrTab.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HotPick.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HelpTool.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/DemoPanel.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddXYtheme.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HelpDialog.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddLyrDialog.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/DistanceTool.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/MyTableModel.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/XYfeatureLayer.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingToolStart.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/CreateShapeDialog.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/CreateXYShapeDialog.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/VerticalBarLegendPanel.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    </favorite_root>
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/src/main/resources" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/src/test" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/src/test/java" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </favorite_root>
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/.idea" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/.idea/misc.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/libraries" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/libraries/Maven__com_esri_mo2_esri_mo20_unknown.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/libraries/Maven__com_esri_mo2_esri_mo20img_unknown.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/libraries/Maven__com_esri_mo2_esri_mo20res_unknown.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/.idea/modules.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/compiler.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/workspace.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/inspectionProfiles" module="chartsformoj" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/chartsformoj.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MapObjectChartController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/MapObjectChartController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print/PrintUtility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChartingMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="280" column="79" lean-forward="true" selection-start-line="280" selection-start-column="79" selection-end-line="280" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChartingToolStart.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingToolStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChartingTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="815">
+              <caret line="109" column="36" lean-forward="false" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arrow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Arrow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddXYtheme.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddXYtheme.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.\src\data</find>
+      <find>./src/data</find>
+      <find>./src</find>
+      <find>Charting</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>./src/main/resources</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\mvikr\Documents\GitHub\chartsformoj</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/main/gui/PowerRegressionGUI.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="charts-for-moj" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="charts-for-moj" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="charts-for-moj" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="580" />
+    <option name="y" value="190" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chartsformoj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chartsformoj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mvikr\Documents\GitHub\chartsformoj\src\main\resources" />
+      <recent name="C:\Users\mvikr\Documents\GitHub\chartsformoj\src\main\java\com\sdsu\edu" />
+      <recent name="C:\Users\mvikr\Documents\GitHub\chartsformoj\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ChartingMain">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="ChartingMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sdsu.edu.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.sdsu.edu.main.ChartingMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="chartsformoj" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="charts-for-moj [install:install-file] esri_mo20" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install:install-file" />
+                <option value="-Dfile=C:\Users\mvikr\Documents\GitHub\charts-for-moj\out\artifacts\ChartsForMapObj_jar\esri_mo20res.jar" />
+                <option value="-DgroupId=com.esri.mo2" />
+                <option value="-DartifactId=esri_mo20res" />
+                <option value="-Dversion=1" />
+                <option value="-Dpackaging=jar" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Maven.charts-for-moj [install:install-file] esri_mo20" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ChartingMain" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.ChartingMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10873b90-a1d7-4171-a3bb-bfffa0339b80" name="Default" comment="" />
+      <created>1529175090292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529175090292</updated>
+      <workItem from="1529175093706" duration="6621000" />
+      <workItem from="1529785499766" duration="623000" />
+      <workItem from="1530925222969" duration="1489000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8733000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37206823" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43758044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14232409" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java</url>
+          <line>607</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java</url>
+          <line>601</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java</url>
+          <line>606</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/MapObjectChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print/PrintUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="109" column="36" lean-forward="false" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Arrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddXYtheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4182">
+          <caret line="297" column="65" lean-forward="true" selection-start-line="297" selection-start-column="65" selection-end-line="297" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/MapObjectChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print/PrintUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Arrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="109" column="36" lean-forward="false" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddXYtheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4029">
+          <caret line="288" column="45" lean-forward="true" selection-start-line="288" selection-start-column="45" selection-end-line="288" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/DemoPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/AddLyrDialog.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Arrow.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/print/PrintUtility.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controller/ChartController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/view/ChartViewController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/constant/GUILabelConstants.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/gui/ChartViewFrameGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/model/ChartModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/gui/PowerRegressionGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/DemoPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/ThreeDimensionalPanelGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/view/BarChartViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/DistanceTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/CreateShapeDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/HelpDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/gui/BarPanelGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant/ChartType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/constant/GUILabelConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/db/DbfReadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/ChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/AddXYtheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/Arrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/controller/MapObjectChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/print/PrintUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="280" column="79" lean-forward="true" selection-start-line="280" selection-start-column="79" selection-end-line="280" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="109" column="36" lean-forward="false" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdsu/edu/main/ChartingToolStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean" />
+  </component>
+</project>
