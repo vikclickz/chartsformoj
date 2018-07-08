@@ -12,6 +12,7 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.CategoryLabelPositions;
+import org.jfree.chart.axis.NumberTickUnitSource;
 import org.jfree.chart.axis.SymbolAxis;
 import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.plot.PiePlot3D;
@@ -43,69 +44,122 @@ public class MapObjectChartController {
     return mapObjectChartController;
   }
 
-  public void createPolynomialRegressionChart(List<String> selectedFields,
-      String xAxisLabel, Integer order) {
-    String yAxisLabel = selectedFields.get(0);
+  public void createPolynomialRegressionChart(List<String> xAxisSelectedList,
+      List<String> yAxisSelectedList, Integer order) {
+//    String yAxisLabel = selectedFields.get(0);
+//
+//    ChartModel chartModel = buildChartModel(selectedFields, xAxisLabel,
+//        POLYNOMIAL_REGRESSION_CHART, yAxisLabel);
+//
+//    String title = xAxisLabel + " vs " + yAxisLabel;
+//
+//    JFreeChart chart = ChartFactory.createScatterPlot(title,
+//        xAxisLabel, yAxisLabel, chartModel.getXyDataset());
+//
+//    XYPlot plot = (XYPlot) chart.getPlot();
+//    plot.setBackgroundPaint(Color.WHITE);
+//    plot.setDomainAxis(chartModel.getDomainAxis());
+//    ChartPanel panel = new ChartPanel(chart);
+//    chartViewController.displayChart(panel, title);
 
-    ChartModel chartModel = buildChartModel(selectedFields, xAxisLabel,
-        POLYNOMIAL_REGRESSION_CHART, yAxisLabel);
+    String independentVar = yAxisSelectedList.get(0);
+    String dependentVar = xAxisSelectedList.get(0);
 
-    String title = xAxisLabel + " vs " + yAxisLabel;
+    ChartModel chartModel = buildChartMode2l(independentVar, dependentVar,
+        POLYNOMIAL_REGRESSION_CHART);
 
-    JFreeChart chart = ChartFactory.createScatterPlot(title,
-        xAxisLabel, yAxisLabel, chartModel.getXyDataset());
-
-    XYPlot plot = (XYPlot) chart.getPlot();
-    plot.setBackgroundPaint(Color.WHITE);
-    plot.setDomainAxis(chartModel.getDomainAxis());
-    ChartPanel panel = new ChartPanel(chart);
-    chartViewController.displayChart(panel, title);
-
-    drawPolyRegressionLine(chartModel.getXyDataset(), chart, order);
-  }
-
-  public void createPowerRegressionChart(List<String> selectedFields,
-      String xAxisLabel) {
-
-    String yAxisLabel = selectedFields.get(0);
-
-    ChartModel chartModel = buildChartModel(selectedFields, xAxisLabel,
-        POWER_REGRESSION_CHART, yAxisLabel);
-
-    String title = xAxisLabel + " vs " + yAxisLabel;
-
-    JFreeChart chart = ChartFactory.createScatterPlot(
-        title, xAxisLabel, yAxisLabel, chartModel.getXyDataset());
-
-    XYPlot plot = (XYPlot) chart.getPlot();
-    plot.setBackgroundPaint(Color.WHITE);
-    plot.setDomainAxis(chartModel.getDomainAxis());
-    ChartPanel panel = new ChartPanel(chart);
-    chartViewController.displayChart(panel, title);
-
-    drawPowerRegressionLine(chartModel.getXyDataset(), chart);
-  }
-
-  public void createLinearRegressionChart(List<String> selectedFields,
-      String xAxisLabel) {
-    String yAxisLabel = selectedFields.get(0);
-
-    ChartModel chartModel = buildChartModel(selectedFields, xAxisLabel,
-        LINEAR_REGRESSION_CHART, yAxisLabel);
-
-    String title = xAxisLabel + " vs " + yAxisLabel;
+    String title = dependentVar + " vs " + independentVar;
 
     JFreeChart chart = ChartFactory.createScatterPlot(
         title,
-        xAxisLabel, yAxisLabel, chartModel.getXyDataset());
+        dependentVar, independentVar, chartModel.getXyDataset());
 
     XYPlot plot = (XYPlot) chart.getPlot();
-    plot.setBackgroundPaint(Color.WHITE);
-    plot.setDomainAxis(chartModel.getDomainAxis());
+    plot.setBackgroundPaint(Color.LIGHT_GRAY);
+
+    ValueAxis domainAxis = plot.getDomainAxis();
+    domainAxis.setRange(0, plot.getDomainAxis().getRange().getCentralValue() * 2);
+    domainAxis.setStandardTickUnits(new NumberTickUnitSource());
+    plot.setDomainAxis(domainAxis);
+
+    ValueAxis rangeAxis = plot.getRangeAxis();
+    rangeAxis.setRange(0, plot.getRangeAxis().getRange().getCentralValue() * 2);
+    rangeAxis.setStandardTickUnits(new NumberTickUnitSource());
+    plot.setRangeAxis(rangeAxis);
+
+    ChartPanel panel = new ChartPanel(chart);
+    chartViewController.displayChart(panel, title);
+    drawPolyRegressionLine(chartModel.getXyDataset(), chart, order,
+        plot.getDomainAxis().getRange().getLowerBound(), plot.getDomainAxis().getRange().getUpperBound());
+  }
+
+  public void createPowerRegressionChart(List<String> xAxisSelectedList,
+      List<String> yAxisSelectedList) {
+
+    String independentVar = yAxisSelectedList.get(0);
+    String dependentVar = xAxisSelectedList.get(0);
+
+    ChartModel chartModel = buildChartMode2l(independentVar, dependentVar,
+        POWER_REGRESSION_CHART);
+
+    String title = dependentVar + " vs " + independentVar;
+
+    JFreeChart chart = ChartFactory.createScatterPlot(
+        title,
+        dependentVar, independentVar, chartModel.getXyDataset());
+
+    XYPlot plot = (XYPlot) chart.getPlot();
+    plot.setBackgroundPaint(Color.LIGHT_GRAY);
+
+    ValueAxis domainAxis = plot.getDomainAxis();
+    domainAxis.setRange(0, plot.getDomainAxis().getRange().getCentralValue() * 2);
+    domainAxis.setStandardTickUnits(new NumberTickUnitSource());
+    plot.setDomainAxis(domainAxis);
+
+    ValueAxis rangeAxis = plot.getRangeAxis();
+    rangeAxis.setRange(0, plot.getRangeAxis().getRange().getCentralValue() * 2);
+    rangeAxis.setStandardTickUnits(new NumberTickUnitSource());
+    plot.setRangeAxis(rangeAxis);
+
     ChartPanel panel = new ChartPanel(chart);
     chartViewController.displayChart(panel, title);
 
-    drawRegressionLine(chartModel.getXyDataset(), chart);
+    drawPowerRegressionLine(chartModel.getXyDataset(), chart,
+        plot.getDomainAxis().getRange().getLowerBound(), plot.getDomainAxis().getRange().getUpperBound());
+  }
+
+  public void createLinearRegressionChart(List<String> xAxisSelectedList, List<String> yAxisSelectedList) {
+    String independentVar = yAxisSelectedList.get(0);
+    String dependentVar = xAxisSelectedList.get(0);
+
+    ChartModel chartModel = buildChartMode2l(independentVar, dependentVar,
+        LINEAR_REGRESSION_CHART);
+
+    String title = dependentVar + " vs " + independentVar;
+
+    JFreeChart chart = ChartFactory.createScatterPlot(
+        title,
+        dependentVar, independentVar, chartModel.getXyDataset());
+
+    XYPlot plot = (XYPlot) chart.getPlot();
+    plot.setBackgroundPaint(Color.LIGHT_GRAY);
+
+    ValueAxis domainAxis = plot.getDomainAxis();
+    domainAxis.setRange(0, plot.getDomainAxis().getRange().getCentralValue() * 2);
+    domainAxis.setStandardTickUnits(new NumberTickUnitSource());
+    plot.setDomainAxis(domainAxis);
+
+    ValueAxis rangeAxis = plot.getRangeAxis();
+    rangeAxis.setRange(0, plot.getRangeAxis().getRange().getCentralValue() * 2);
+    rangeAxis.setStandardTickUnits(new NumberTickUnitSource());
+    plot.setRangeAxis(rangeAxis);
+
+    //plot.mapDatasetToDomainAxes();
+    ChartPanel panel = new ChartPanel(chart);
+    chartViewController.displayChart(panel, title);
+
+    drawRegressionLine(chartModel.getXyDataset(), chart,
+        plot.getDomainAxis().getRange().getLowerBound(), plot.getDomainAxis().getRange().getUpperBound());
   }
 
   public void create3dPieChart(List<String> selectedFields,
@@ -130,6 +184,7 @@ public class MapObjectChartController {
     plot.setForegroundAlpha(0.60f);
     plot.setInteriorGap(0.02);
     plot.setDirection(Rotation.ANTICLOCKWISE);
+    plot.setLabelGenerator(null);
 
     ChartPanel panel = new ChartPanel(chart);
     ChartViewController chartViewController = new PieChartViewController();
@@ -164,7 +219,8 @@ public class MapObjectChartController {
     chartViewController.displayChart(panel, title);
   }
 
-  private void drawPolyRegressionLine(XYDataset inputData, JFreeChart chart, Integer order) {
+  private void drawPolyRegressionLine(XYDataset inputData, JFreeChart chart, Integer order,
+      double lowerBound, double upperBound) {
     // Get the parameters 'a' and 'b' for an equation y = a + b * x,
     // fitted to the inputData using ordinary least squares regression.
     // a - regressionParameters[0], b - regressionParameters[1]
@@ -181,7 +237,7 @@ public class MapObjectChartController {
     Function2D curve = new PolynomialFunction2D(myArr);
 
     XYDataset dataset = DatasetUtilities.sampleFunction2D(curve,
-        0.0, 50.0, 100, "Poly Regression Line");
+        lowerBound, upperBound, 100, "Poly Regression Line");
 
     XYLineAndShapeRenderer renderer2 = new XYLineAndShapeRenderer(true,
         false);
@@ -193,7 +249,8 @@ public class MapObjectChartController {
 
   }
 
-  private void drawPowerRegressionLine(XYDataset inputData, JFreeChart chart) {
+  private void drawPowerRegressionLine(XYDataset inputData, JFreeChart chart,
+      double lowerbound, double upperBound) {
     // Get the parameters 'a' and 'b' for an equation y = a + b * x,
     // fitted to the inputData using ordinary least squares regression.
     // a - regressionParameters[0], b - regressionParameters[1]
@@ -205,7 +262,7 @@ public class MapObjectChartController {
         regressionParameters[1]);
 
     XYDataset dataset = DatasetUtilities.sampleFunction2D(curve,
-        0.0, 50.0, 100, "Power Regression Line");
+        lowerbound, upperBound, 100, "Power Regression Line");
 
     XYLineAndShapeRenderer renderer2 = new XYLineAndShapeRenderer(true,
         false);
@@ -217,7 +274,8 @@ public class MapObjectChartController {
   }
 
 
-  private void drawRegressionLine(XYDataset inputData, JFreeChart chart) {
+  private void drawRegressionLine(XYDataset inputData, JFreeChart chart, double lowerBound,
+      double upperBound) {
     // Get the parameters 'a' and 'b' for an equation y = a + b * x,
     // fitted to the inputData using ordinary least squares regression.
     // a - regressionParameters[0], b - regressionParameters[1]
@@ -230,7 +288,7 @@ public class MapObjectChartController {
 
     // Creates a dataset by taking sample values from the line function
     XYDataset dataset = DatasetUtilities.sampleFunction2D(linefunction2d,
-        0D, 300, 100, "Linear Regression Line");
+        lowerBound, upperBound, 100, "Linear Regression Line");
 
     // Draw the line dataset
     XYPlot xyplot = chart.getXYPlot();
@@ -239,6 +297,43 @@ public class MapObjectChartController {
         true, false);
     xylineandshaperenderer.setSeriesPaint(0, Color.BLACK);
     xyplot.setRenderer(1, xylineandshaperenderer);
+  }
+
+  private ChartModel buildChartMode2l(
+      String independentVar, String dependentVar, String chartTitle) {
+
+    ChartModel chartModel = new ChartModel();
+
+    List<Double> independentListVal = DbfReadController.getInstance().getNumericRecord().fieldAndValues
+        .get(independentVar);
+    List<Double> dependentListVal = DbfReadController.getInstance().getNumericRecord().fieldAndValues
+        .get(dependentVar);
+    /*List<String> xAxislabelList = DbfReadController.getInstance().getCharRecord().fieldAndValues
+        .get(xAxisLbl);*/
+
+    /*String[] labelArray = new String[xAxislabelList.size()];
+    labelArray = xAxislabelList.toArray(labelArray);*/
+
+//    ValueAxis xAxis = new SymbolAxis(xAxisLbl, labelArray);
+//    xAxis.setVerticalTickLabels(true);
+
+    XYSeries series1 = new XYSeries(chartTitle);
+
+    if (chartTitle.contains("Linear")) {
+      for (int i = 1; i <= independentListVal.size(); i++) {
+        series1.add(dependentListVal.get(i-1), independentListVal.get(i-1));
+      }
+    } else {
+      for (int i = 1; i <= independentListVal.size(); i++) {
+        series1.add(dependentListVal.get(i-1), independentListVal.get(i-1));
+      }
+    }
+    //chartModel.setDomainAxis(xAxis);
+
+    chartModel.setIndependentList(independentListVal);
+    chartModel.setDependentList(dependentListVal);
+    chartModel.setXyDataset(new XYSeriesCollection(series1));
+    return chartModel;
   }
 
   private ChartModel buildChartModel(List<String> selectedFields,

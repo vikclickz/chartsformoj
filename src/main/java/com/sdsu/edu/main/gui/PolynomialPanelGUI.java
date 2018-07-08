@@ -1,7 +1,11 @@
 package com.sdsu.edu.main.gui;
 
-import com.sdsu.edu.main.constant.GUILabelConstants;
+import static com.sdsu.edu.main.constant.GUILabelConstants.DEPENDENT_VARIABLE;
+import static com.sdsu.edu.main.constant.GUILabelConstants.INDEPENDENT_VARIABLE;
+
 import com.sdsu.edu.main.controller.MapObjectChartController;
+import com.sdsu.edu.main.controller.db.DbfReadController;
+import com.sdsu.edu.main.constant.GUILabelConstants;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,12 +23,14 @@ public class PolynomialPanelGUI extends JPanel {
   private String[] characterNameTypes;
   private List<String> attributeNames;
   final DefaultListModel<String> attributeList;
-  final JList<String> attributeSelectList;
-  public List<String> selectedFields;
-  private JComboBox<String> charNamejcb;
+  final JList<String> attributeXaxisSelectList;
+  final JList<String> attributeYaxisSelectList;
+
+  public List<String> xAxisSelectedList;
+  public List<String> yAxisSelectedList;
+
   private JComboBox<Integer> chartOrderJcb;
   private JButton selectbtn;
-  String characterNameSType;
   Integer nonLinearRegressionOrder = 2;
   private Integer[] regressionOrder = {2,3};
 
@@ -39,31 +45,34 @@ public class PolynomialPanelGUI extends JPanel {
     // set layout
     setLayout(new GridLayout(1, 5));
 
-    // set combobox for char Name type
-    charNamejcb = new JComboBox<String>(characterNameTypes);
-    charNamejcb.setAutoscrolls(getVerifyInputWhenFocusTarget());
-    add(charNamejcb);
-
-    // things to do upon selecting the type of chart that is needed
-    charNamejcb.addActionListener(new ActionListener() {
-      public void actionPerformed(ActionEvent e) {
-        JComboBox<String> characterNameType = (JComboBox<String>) e.getSource();
-        characterNameSType = (String) characterNameType.getSelectedItem();
-      }
-    });
     // set the list for numeric attributes available to select
     JScrollPane scrollPane = new JScrollPane();
-    attributeSelectList = new JList<String>(attributeList);
-    attributeSelectList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-    attributeSelectList.setSelectedIndex(0);
-    attributeSelectList.setVisibleRowCount(5);
-    attributeSelectList.getAutoscrolls();
-    attributeSelectList.setAutoscrolls(getVerifyInputWhenFocusTarget());
-    scrollPane.setViewportView(attributeSelectList);
+    attributeYaxisSelectList = new JList<String>(attributeList);
+    attributeYaxisSelectList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+    attributeYaxisSelectList.setSelectedIndex(0);
+    attributeYaxisSelectList.setVisibleRowCount(5);
+    attributeYaxisSelectList.getAutoscrolls();
+    attributeYaxisSelectList.setAutoscrolls(getVerifyInputWhenFocusTarget());
+    attributeYaxisSelectList.setToolTipText(DEPENDENT_VARIABLE);
+    attributeYaxisSelectList.setFocusable(true);
+    scrollPane.setViewportView(attributeYaxisSelectList);
     add(scrollPane);
+
+    JScrollPane scrollPane2 = new JScrollPane();
+    attributeXaxisSelectList = new JList<String>(attributeList);
+    attributeXaxisSelectList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+    attributeXaxisSelectList.setSelectedIndex(0);
+    attributeXaxisSelectList.setVisibleRowCount(5);
+    attributeXaxisSelectList.getAutoscrolls();
+    attributeXaxisSelectList.setAutoscrolls(getVerifyInputWhenFocusTarget());
+    attributeXaxisSelectList.setToolTipText(INDEPENDENT_VARIABLE);
+    attributeXaxisSelectList.setFocusable(true);
+    scrollPane2.setViewportView(attributeXaxisSelectList);
+    add(scrollPane2);
 
     chartOrderJcb = new JComboBox<Integer>(regressionOrder);
     chartOrderJcb.setAutoscrolls(getVerifyInputWhenFocusTarget());
+    chartOrderJcb.setToolTipText("Polynomial Function Order");
     add(chartOrderJcb);
 
     // things to do upon selecting the type of chart that is needed
@@ -79,21 +88,29 @@ public class PolynomialPanelGUI extends JPanel {
     add(selectbtn);
     selectbtn.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        selectedFields = new ArrayList<String>();
+        xAxisSelectedList = new ArrayList<String>();
+        yAxisSelectedList = new ArrayList<String>();
         String data = "";
-        if (attributeSelectList.getSelectedIndex() != -1) {
+        if (attributeYaxisSelectList.getSelectedIndex() != -1 &&
+            attributeXaxisSelectList.getSelectedIndex() != -1) {
           data += "attribute selected: ";
-          for (Object obj : attributeSelectList.getSelectedValues()) {
+          for (Object obj : attributeXaxisSelectList.getSelectedValues()) {
             data += obj + ", ";
-            selectedFields.add((String) obj);
+            xAxisSelectedList.add((String) obj);
           }
 
-          if(characterNameSType == null) {
-            characterNameSType = (String) charNamejcb.getSelectedItem();
+          for (Object obj : attributeYaxisSelectList.getSelectedValues()) {
+            data += obj + ", ";
+            yAxisSelectedList.add((String) obj);
           }
+
+          if(ChartUIUtil.parameterChecks(xAxisSelectedList, yAxisSelectedList)) {
+            return;
+          }
+
           MapObjectChartController mapObjectChartController = MapObjectChartController.getInstance();
-          mapObjectChartController.createPolynomialRegressionChart(selectedFields,
-              characterNameSType, nonLinearRegressionOrder);
+          mapObjectChartController.createPolynomialRegressionChart(xAxisSelectedList,
+              yAxisSelectedList, nonLinearRegressionOrder);
         }
       }
     });

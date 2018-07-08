@@ -11,4 +11,6 @@ public class GUILabelConstants {
   public static final String POWER_REGRESSION_TOOL_TIP = "Power Regression";
   public static final String POLYNOMIAL_REGRESSION_TOOL_TIP = "Polynomial Regression";
   public static final String THREE_DIM_TOOL_TIP = "Three Dimensional Charts";
+  public static final String INDEPENDENT_VARIABLE = "Independent Variable";
+  public static final String DEPENDENT_VARIABLE = "Dependent Variable";
 }

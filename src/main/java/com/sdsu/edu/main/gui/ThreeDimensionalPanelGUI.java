@@ -89,6 +89,11 @@ public class ThreeDimensionalPanelGUI extends JPanel {
             data += obj + ", ";
             selectedFields.add((String) obj);
           }
+
+          if(ChartUIUtil.parameterCheck3d(selectedFields)) {
+            return;
+          }
+
           if (characterNameSType == null) {
             characterNameSType = (String) charNamejcb.getSelectedItem();
           }

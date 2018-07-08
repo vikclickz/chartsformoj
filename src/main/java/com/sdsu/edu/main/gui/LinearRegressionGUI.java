@@ -1,5 +1,8 @@
 package com.sdsu.edu.main.gui;
 
+import static com.sdsu.edu.main.constant.GUILabelConstants.DEPENDENT_VARIABLE;
+import static com.sdsu.edu.main.constant.GUILabelConstants.INDEPENDENT_VARIABLE;
+
 import com.sdsu.edu.main.constant.GUILabelConstants;
 import com.sdsu.edu.main.controller.MapObjectChartController;
 import java.awt.GridLayout;
@@ -19,11 +22,11 @@ public class LinearRegressionGUI extends JPanel {
   private String[] characterNameTypes;
   private List<String> attributeNames;
   final DefaultListModel<String> attributeList;
-  final JList<String> attributeSelectList;
-  public List<String> selectedFields;
-  private JComboBox<String> charNamejcb;
+  final JList<String> attributeSelectListXaxis;
+  final JList<String> attributeSelectListYaxis;
+  public List<String> xAxisSelectedList;
+  public List<String> yAxisSelectedList;
   private JButton selectbtn;
-  String characterNameSType;
 
   public LinearRegressionGUI(List<String> numericNameList, List<String> charNameList) {
     characterNameTypes = charNameList.toArray(new String[charNameList.size()]);
@@ -36,7 +39,7 @@ public class LinearRegressionGUI extends JPanel {
     // set layout
     setLayout(new GridLayout(1, 5));
     // set combobox for char Name type
-    charNamejcb = new JComboBox<String>(characterNameTypes);
+/*    charNamejcb = new JComboBox<String>(characterNameTypes);
     charNamejcb.setAutoscrolls(getVerifyInputWhenFocusTarget());
     add(charNamejcb);
     // things to do upon selecting the type of chart that is needed
@@ -45,36 +48,59 @@ public class LinearRegressionGUI extends JPanel {
         JComboBox<String> characterNameType = (JComboBox<String>) e.getSource();
         characterNameSType = (String) characterNameType.getSelectedItem();
       }
-    });
+    });*/
 
     // set the list for numeric attributes available to select
     JScrollPane scrollPane = new JScrollPane();
-    attributeSelectList = new JList<String>(attributeList);
-    attributeSelectList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-    attributeSelectList.setSelectedIndex(0);
-    attributeSelectList.setVisibleRowCount(5);
-    attributeSelectList.getAutoscrolls();
-    attributeSelectList.setAutoscrolls(getVerifyInputWhenFocusTarget());
-    scrollPane.setViewportView(attributeSelectList);
+    attributeSelectListYaxis = new JList<String>(attributeList);
+    attributeSelectListYaxis.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+    attributeSelectListYaxis.setSelectedIndex(0);
+    attributeSelectListYaxis.setVisibleRowCount(5);
+    attributeSelectListYaxis.getAutoscrolls();
+    attributeSelectListYaxis.setAutoscrolls(getVerifyInputWhenFocusTarget());
+    attributeSelectListYaxis.setToolTipText(DEPENDENT_VARIABLE);
+    attributeSelectListYaxis.setFocusable(true);
+    scrollPane.setViewportView(attributeSelectListYaxis);
     add(scrollPane);
+
+    JScrollPane scrollPane2 = new JScrollPane();
+    attributeSelectListXaxis = new JList<String>(attributeList);
+    attributeSelectListXaxis.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+    attributeSelectListXaxis.setSelectedIndex(0);
+    attributeSelectListXaxis.setVisibleRowCount(5);
+    attributeSelectListXaxis.getAutoscrolls();
+    attributeSelectListXaxis.setAutoscrolls(getVerifyInputWhenFocusTarget());
+    attributeSelectListXaxis.setToolTipText(INDEPENDENT_VARIABLE);
+    attributeSelectListXaxis.setFocusable(true);
+    scrollPane2.setViewportView(attributeSelectListXaxis);
+    add(scrollPane2);
+
     // add a button to show the list of attributes selected
     selectbtn = new JButton(GUILabelConstants.SUBMIT_BTN_LBL);
     add(selectbtn);
     selectbtn.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        selectedFields = new ArrayList<String>();
-        String data = "";
-        if (attributeSelectList.getSelectedIndex() != -1) {
-          data += "attribute selected: ";
-          for (Object obj : attributeSelectList.getSelectedValues()) {
-            data += obj + ", ";
-            selectedFields.add((String) obj);
+        xAxisSelectedList = new ArrayList<String>();
+        yAxisSelectedList = new ArrayList<String>();
+        if (attributeSelectListXaxis.getSelectedIndex() != -1 && attributeSelectListYaxis
+            .getSelectedIndex() != -1) {
+          for (Object obj : attributeSelectListXaxis.getSelectedValues()) {
+            xAxisSelectedList.add((String) obj);
           }
-          if(characterNameSType == null) {
+
+          for (Object obj : attributeSelectListYaxis.getSelectedValues()) {
+            yAxisSelectedList.add((String) obj);
+          }
+
+          if(ChartUIUtil.parameterChecks(xAxisSelectedList, yAxisSelectedList)) {
+            return;
+          }
+
+          /*if(characterNameSType == null) {
             characterNameSType = (String) charNamejcb.getSelectedItem();
-          }
+          }*/
           MapObjectChartController mapObjectChartController = MapObjectChartController.getInstance();
-          mapObjectChartController.createLinearRegressionChart(selectedFields, characterNameSType);
+          mapObjectChartController.createLinearRegressionChart(xAxisSelectedList, yAxisSelectedList);
         }
       }
     });

@@ -34,7 +34,7 @@ public class ChartController {
   }
   /*
    * A dataset Object which contains the String name and its respective quantity
-  */
+   */
   public static class DataSet {
     private String name;
     private Double quantity;
@@ -80,11 +80,11 @@ public class ChartController {
   String yAxisLabel;
 
   public void pieChart(String chartColorSType, String fieldName,
-                 String[] stateName, List<Double> stateAreaList) {
+      String[] stateName, List<Double> stateAreaList) {
     final DataSet[] data1 = new DataSet[stateName.length];
     final DataSet[] sortedData1 = new DataSet[stateName.length];
     Double[] stateArea = (Double[]) stateAreaList
-                   .toArray(new Double[stateAreaList.size()]);
+        .toArray(new Double[stateAreaList.size()]);
     List<String> sortedStateName = new ArrayList<String>();
     for (int i = 0; i < stateName.length; i++) {
       data1[i] = new DataSet(stateName[i], stateArea[i]);
@@ -95,7 +95,7 @@ public class ChartController {
     /*
      * http://stackoverflow.com/questions/15789979/initial-indexes-of-sorted-
      * elements-of-arraylist
-    */
+     */
     int[] indexes = new int[stateAreaList.size()];
     for (int n = 0; n < stateAreaList.size(); n++) {
       indexes[n] = nstore.indexOf(stateAreaList.get(n));
@@ -104,32 +104,32 @@ public class ChartController {
     Double[] sortedStateArea = (Double[]) stateAreaList.toArray(new Double[stateAreaList.size()]);
     for (int i = 0; i < stateName.length; i++) {
       sortedData1[i] = new DataSet(sortedStateName.get(i),
-      sortedStateArea[i]);
+          sortedStateArea[i]);
     }
     /*
      * Create the chart and legend for the given data
-    */
+     */
     final PieChartPanel chart1 = new PieChartPanel(data1, chartColorSType);
     final PieLegendPanel legend1 = new PieLegendPanel(data1);
     final PieChartPanel sortChart1 = new PieChartPanel(sortedData1,chartColorSType);
     final PieLegendPanel sortLegend1 = new PieLegendPanel(sortedData1);
     /*
      * Add the chart and legend to the view
-    */
+     */
     EventQueue.invokeLater(new Runnable() {
       public void run() {
         try {
           ChartViewFrameGUI frame = new ChartViewFrameGUI(data1,
-          sortedData1, chart1, legend1, sortChart1,sortLegend1);
+              sortedData1, chart1, legend1, sortChart1,sortLegend1);
         } catch (Exception e) {
-            e.printStackTrace();
+          e.printStackTrace();
         }
       }
     });
   }  // end pieChart
 
   public void horizontalSingleBarChart(String chartColorSType,
-         String fieldName, String[] stateName, List<Double> stateAreaList) {
+      String fieldName, String[] stateName, List<Double> stateAreaList) {
     final DataSet[] data1 = new DataSet[stateName.length];
     final DataSet[] sortedData1 = new DataSet[stateName.length];
     Random random = new Random();
@@ -143,8 +143,8 @@ public class ChartController {
     Collections.sort(stateAreaList);
     /*
      * http://stackoverflow.com/questions/15789979/initial-indexes-of-sorted-
-      * elements-of-arraylist
-    */
+     * elements-of-arraylist
+     */
     int[] indexes = new int[stateAreaList.size()];
     for (int n = 0; n < stateAreaList.size(); n++) {
       indexes[n] = nstore.indexOf(stateAreaList.get(n));
@@ -153,11 +153,11 @@ public class ChartController {
     Double[] sortedStateArea = (Double[]) stateAreaList.toArray(new Double[stateAreaList.size()]);
     for (int i = 0; i < stateName.length; i++) {
       sortedData1[i] = new DataSet(sortedStateName.get(i),
-      sortedStateArea[i]);
+          sortedStateArea[i]);
     }
     /*
      * Create bar values : "Normal", "Pastel", "Rainbow"
-    */
+     */
     ArrayList<Bar> values1 = new ArrayList<Bar>();
     ArrayList<Bar> sortedValues1 = new ArrayList<Bar>();
     if (chartColorSType.equalsIgnoreCase("Normal")) {
@@ -172,9 +172,9 @@ public class ChartController {
       final float luminance = 1.0f; // 1.0 for brighter, 0.0 for black
       for (int i = 0; i < stateName.length; i++) {
         values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-                 .getHSBColor(hue, saturation, luminance), stateName[i]));
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
         sortedValues1.add(new Bar((int) (100 * sortedStateArea[i]),
-                 Color.getHSBColor(hue, saturation, luminance),sortedStateName.get(i)));
+            Color.getHSBColor(hue, saturation, luminance),sortedStateName.get(i)));
       }
     }
     if (chartColorSType.equalsIgnoreCase("Pastel")) {
@@ -184,20 +184,20 @@ public class ChartController {
       final float luminance = 0.9f;
       for (int i = 0; i < stateName.length; i++) {
         values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-             .getHSBColor(hue, saturation, luminance), stateName[i]));
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
         sortedValues1.add(new Bar((int) (100 * sortedStateArea[i]),
             Color.getHSBColor(hue, saturation, luminance),sortedStateName.get(i)));
       }
     }
     /*
      * Create the chart for the given data
-    */
+     */
     HorizontalBarController testhorizonalbar = new HorizontalBarController();
     testhorizonalbar.horizontalSingleBarMain(values1, fieldName,sortedValues1, sortedData1);
   } // end horizontalSingleBarChart
 
   public void verticalSingleBarChart(String chartColorSType,
-           String fieldName, String[] stateName, List<Double> stateAreaList) {
+      String fieldName, String[] stateName, List<Double> stateAreaList) {
     final DataSet[] data1 = new DataSet[stateName.length];
     final DataSet[] sortedData1 = new DataSet[stateName.length];
     Random random = new Random();
@@ -212,7 +212,7 @@ public class ChartController {
     /*
      * http://stackoverflow.com/questions/15789979/initial-indexes-of-sorted-
      * elements-of-arraylist
-    */
+     */
     int[] indexes = new int[stateAreaList.size()];
     for (int n = 0; n < stateAreaList.size(); n++) {
       indexes[n] = nstore.indexOf(stateAreaList.get(n));
@@ -221,18 +221,18 @@ public class ChartController {
     Double[] sortedStateArea = (Double[]) stateAreaList.toArray(new Double[stateAreaList.size()]);
     for (int i = 0; i < stateName.length; i++) {
       sortedData1[i] = new DataSet(sortedStateName.get(i),
-      sortedStateArea[i]);
+          sortedStateArea[i]);
     }
     /*
      * Create bar values : "Normal", "Pastel", "Rainbow"
-    */
+     */
     ArrayList<Bar> values1 = new ArrayList<Bar>();
     ArrayList<Bar> sortedValues1 = new ArrayList<Bar>();
     if (chartColorSType.equalsIgnoreCase("Normal")) {
       for (int i = 0; i < stateName.length; i++) {
         values1.add(new Bar((int) (100 * fieldvalue1[i]), Color.RED,stateName[i]));
         sortedValues1.add(new Bar((int) (100 * sortedStateArea[i]),
-                                      Color.RED, sortedStateName.get(i)));
+            Color.RED, sortedStateName.get(i)));
       }
     }
     if (chartColorSType.equalsIgnoreCase("Rainbow")) {
@@ -241,7 +241,7 @@ public class ChartController {
       final float luminance = 1.0f; // 1.0 for brighter, 0.0 for black
       for (int i = 0; i < stateName.length; i++) {
         values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-                 .getHSBColor(hue, saturation, luminance), stateName[i]));
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
         sortedValues1.add(new Bar((int) (100 * sortedStateArea[i]),
             Color.getHSBColor(hue, saturation, luminance),sortedStateName.get(i)));
       }
@@ -253,36 +253,36 @@ public class ChartController {
       final float luminance = 0.9f;
       for (int i = 0; i < stateName.length; i++) {
         values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-              .getHSBColor(hue, saturation, luminance), stateName[i]));
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
         sortedValues1.add(new Bar((int) (100 * sortedStateArea[i]),
-              Color.getHSBColor(hue, saturation, luminance),sortedStateName.get(i)));
+            Color.getHSBColor(hue, saturation, luminance),sortedStateName.get(i)));
       }
     }
     /*
      * Create the chart for the given data
-    */
+     */
     ChartViewFrameGUI frame = new ChartViewFrameGUI(data1, sortedData1, values1, sortedValues1, fieldName);
   } // end verticalSingleBarChart
 
   public void horizontalMultiBarChart(String chartColorSType,
-        List<String> fieldNameList, String[] stateName,List<List<Double>> fieldvalueList) {
+      List<String> fieldNameList, String[] stateName,List<List<Double>> fieldvalueList) {
     Random random = new Random();
     Double[] fieldvalue1;
     Double[] fieldvalue2;
     fieldvalue1 = (Double[]) fieldvalueList.get(0).toArray(
-                     new Double[fieldvalueList.get(0).size()]);
+        new Double[fieldvalueList.get(0).size()]);
     fieldvalue2 = (Double[]) fieldvalueList.get(1).toArray(
-                     new Double[fieldvalueList.get(1).size()]);
+        new Double[fieldvalueList.get(1).size()]);
     Collections.sort(fieldvalueList.get(0));
     Double[] sortedFieldvalue1 = (Double[]) fieldvalueList.get(0)
-              .toArray(new Double[fieldvalueList.get(0).size()]);
+        .toArray(new Double[fieldvalueList.get(0).size()]);
     Collections.sort(fieldvalueList.get(1));
     Double[] sortedFieldvalue2 = (Double[]) fieldvalueList.get(1)
-             .toArray(new Double[fieldvalueList.get(1).size()]);
+        .toArray(new Double[fieldvalueList.get(1).size()]);
     maxValueOfTwoFields = Math.max(sortedFieldvalue1[sortedFieldvalue1.length-1], sortedFieldvalue2[sortedFieldvalue1.length-1]);
     /*
      * Create bar values : "Normal", "Pastel", "Rainbow"
-    */
+     */
     ArrayList<Bar> values1 = new ArrayList<Bar>();
     ArrayList<Bar> values2 = new ArrayList<Bar>();
     if (chartColorSType.equalsIgnoreCase("Normal")) {
@@ -297,70 +297,7 @@ public class ChartController {
       final float luminance = 1.0f; // 1.0 for brighter, 0.0 for black
       for (int i = 0; i < stateName.length; i++) {
         values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-                .getHSBColor(hue, saturation, luminance), stateName[i]));
-        values2.add(new Bar((int) (100 * fieldvalue2[i]),
-            Color.getHSBColor(hue * 10, saturation * 10,luminance * 10), stateName[i]));
-      }
-    }
-    if (chartColorSType.equalsIgnoreCase("Pastel")) {
-      final float hue = random.nextFloat();
-      // Saturation between 0.1 and 0.3
-      final float saturation = (random.nextInt(2000) + 1000) / 10000f;
-      final float luminance = 0.9f;
-      for (int i = 0; i < stateName.length; i++) {
-        values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-              .getHSBColor(hue, saturation, luminance), stateName[i]));
-        values2.add(new Bar((int) (100 * fieldvalue2[i]),
-            Color.getHSBColor(hue * 10, saturation * 10,luminance * 10), stateName[i]));
-      }
-    }
-    /*
-     * Create the chart for the given data
-    */
-    HorizontalBarController testhorizonalbar = new HorizontalBarController();
-    testhorizonalbar.horizontalTwoBarMain(values1, values2, fieldNameList, maxValueOfTwoFields);
-  }  // end horizontalMultiBarChart
-
-  public void verticalMultiBarChart(String chartColorSType,
-            List<String> fieldNameList, String[] stateName,
-            List<List<Double>> fieldvalueList) {
-    final DataSet[] data1 = new DataSet[stateName.length];
-    Random random = new Random();
-    Double[] fieldvalue1;
-    Double[] fieldvalue2;
-    fieldvalue1 = (Double[]) fieldvalueList.get(0).toArray(
-          new Double[fieldvalueList.get(0).size()]);
-    fieldvalue2 = (Double[]) fieldvalueList.get(1).toArray(
-          new Double[fieldvalueList.get(1).size()]);
-    for (int i = 0; i < stateName.length; i++) {
-      data1[i] = new DataSet(stateName[i], fieldvalue1[i]);
-    }
-    Collections.sort(fieldvalueList.get(0));
-    Double[] sortedFieldvalue1 = (Double[]) fieldvalueList.get(0)
-                .toArray(new Double[fieldvalueList.get(0).size()]);
-    Collections.sort(fieldvalueList.get(1));
-    Double[] sortedFieldvalue2 = (Double[]) fieldvalueList.get(1)
-                    .toArray(new Double[fieldvalueList.get(1).size()]);
-    maxValueOfTwoFields = Math.max(sortedFieldvalue1[sortedFieldvalue1.length-1],
-           sortedFieldvalue2[sortedFieldvalue1.length-1]);
-    /*
-     * Create bar values : "Normal", "Pastel", "Rainbow"
-    */
-    ArrayList<Bar> values1 = new ArrayList<Bar>();
-    ArrayList<Bar> values2 = new ArrayList<Bar>();
-    if (chartColorSType.equalsIgnoreCase("Normal")) {
-      for (int i = 0; i < stateName.length; i++) {
-        values1.add(new Bar((int) (100 * fieldvalue1[i]), Color.RED,stateName[i]));
-        values2.add(new Bar((int) (100 * fieldvalue2[i]), Color.BLUE,stateName[i]));
-      }
-    }
-    if (chartColorSType.equalsIgnoreCase("Rainbow")) {
-      final float hue = random.nextFloat();
-      final float saturation = 0.9f;// 1.0 for brilliant, 0.0 for dull
-      final float luminance = 1.0f; // 1.0 for brighter, 0.0 for black
-      for (int i = 0; i < stateName.length; i++) {
-        values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
-               .getHSBColor(hue, saturation, luminance), stateName[i]));
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
         values2.add(new Bar((int) (100 * fieldvalue2[i]),
             Color.getHSBColor(hue * 10, saturation * 10,luminance * 10), stateName[i]));
       }
@@ -379,14 +316,77 @@ public class ChartController {
     }
     /*
      * Create the chart for the given data
-    */
+     */
+    HorizontalBarController testhorizonalbar = new HorizontalBarController();
+    testhorizonalbar.horizontalTwoBarMain(values1, values2, fieldNameList, maxValueOfTwoFields);
+  }  // end horizontalMultiBarChart
+
+  public void verticalMultiBarChart(String chartColorSType,
+      List<String> fieldNameList, String[] stateName,
+      List<List<Double>> fieldvalueList) {
+    final DataSet[] data1 = new DataSet[stateName.length];
+    Random random = new Random();
+    Double[] fieldvalue1;
+    Double[] fieldvalue2;
+    fieldvalue1 = (Double[]) fieldvalueList.get(0).toArray(
+        new Double[fieldvalueList.get(0).size()]);
+    fieldvalue2 = (Double[]) fieldvalueList.get(1).toArray(
+        new Double[fieldvalueList.get(1).size()]);
+    for (int i = 0; i < stateName.length; i++) {
+      data1[i] = new DataSet(stateName[i], fieldvalue1[i]);
+    }
+    Collections.sort(fieldvalueList.get(0));
+    Double[] sortedFieldvalue1 = (Double[]) fieldvalueList.get(0)
+        .toArray(new Double[fieldvalueList.get(0).size()]);
+    Collections.sort(fieldvalueList.get(1));
+    Double[] sortedFieldvalue2 = (Double[]) fieldvalueList.get(1)
+        .toArray(new Double[fieldvalueList.get(1).size()]);
+    maxValueOfTwoFields = Math.max(sortedFieldvalue1[sortedFieldvalue1.length-1],
+        sortedFieldvalue2[sortedFieldvalue1.length-1]);
+    /*
+     * Create bar values : "Normal", "Pastel", "Rainbow"
+     */
+    ArrayList<Bar> values1 = new ArrayList<Bar>();
+    ArrayList<Bar> values2 = new ArrayList<Bar>();
+    if (chartColorSType.equalsIgnoreCase("Normal")) {
+      for (int i = 0; i < stateName.length; i++) {
+        values1.add(new Bar((int) (100 * fieldvalue1[i]), Color.RED,stateName[i]));
+        values2.add(new Bar((int) (100 * fieldvalue2[i]), Color.BLUE,stateName[i]));
+      }
+    }
+    if (chartColorSType.equalsIgnoreCase("Rainbow")) {
+      final float hue = random.nextFloat();
+      final float saturation = 0.9f;// 1.0 for brilliant, 0.0 for dull
+      final float luminance = 1.0f; // 1.0 for brighter, 0.0 for black
+      for (int i = 0; i < stateName.length; i++) {
+        values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
+        values2.add(new Bar((int) (100 * fieldvalue2[i]),
+            Color.getHSBColor(hue * 10, saturation * 10,luminance * 10), stateName[i]));
+      }
+    }
+    if (chartColorSType.equalsIgnoreCase("Pastel")) {
+      final float hue = random.nextFloat();
+      // Saturation between 0.1 and 0.3
+      final float saturation = (random.nextInt(2000) + 1000) / 10000f;
+      final float luminance = 0.9f;
+      for (int i = 0; i < stateName.length; i++) {
+        values1.add(new Bar((int) (100 * fieldvalue1[i]), Color
+            .getHSBColor(hue, saturation, luminance), stateName[i]));
+        values2.add(new Bar((int) (100 * fieldvalue2[i]),
+            Color.getHSBColor(hue * 10, saturation * 10,luminance * 10), stateName[i]));
+      }
+    }
+    /*
+     * Create the chart for the given data
+     */
     ChartViewFrameGUI frame = new ChartViewFrameGUI( values1,
-               values2, fieldNameList, data1, maxValueOfTwoFields);
+        values2, fieldNameList, data1, maxValueOfTwoFields);
   }  // end VerticalMultiBarChart
 
   /*
    * Pie Chart Framework: Legend and chart rendering
-  */
+   */
   public class PieChartPanel extends JPanel {
     private DataSet[] dataset;
     private double totalQuant;
@@ -402,7 +402,7 @@ public class ChartController {
       int width = getSize().height;
       Graphics2D g2d = (Graphics2D) g;
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                              RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       totalQuant = 0;
       for (DataSet eachData : dataset) {
         totalQuant += eachData.getQuantity();
@@ -453,7 +453,7 @@ public class ChartController {
       int width = 10;
       Graphics2D g2d = (Graphics2D) g;
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                           RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       for (DataSet eachData : dataset) {
         final double eachFinalData = eachData.getQuantity();
         final double eachFinalTuncateData =  truncateDouble((eachData.getQuantity()*100/totalQuantity));
@@ -483,7 +483,7 @@ public class ChartController {
 
   /*
    * Classes supporting Bar Chart Rendering
-  */
+   */
   public static class Axis {
     public int primaryIncrements = 0;
     public int secondaryIncrements = 0;
@@ -496,7 +496,7 @@ public class ChartController {
       this(100, 0, 50, 10, 5, xname, yname);
     }
     Axis(int primaryIncrements, int secondaryIncrements,
-           int tertiaryIncrements, String xname, String yname) {
+        int tertiaryIncrements, String xname, String yname) {
       this(100, 0, primaryIncrements, secondaryIncrements,tertiaryIncrements, xname, yname);
     }
     public Axis(Integer maxValue, Integer minValue, int primaryIncrements,
@@ -532,11 +532,11 @@ public class ChartController {
   }
   /*
    * Horizontal Bar Chart Rendering
-  */
+   */
   public class HorizontalBarController {
     public void horizontalTwoBarMain(ArrayList<Bar> values1,
         ArrayList<Bar> values2, List<String> fieldNameList, double maxValueOfTwoFields) {
-        ArrayList<MultiBar> ml = new ArrayList<MultiBar>();
+      ArrayList<MultiBar> ml = new ArrayList<MultiBar>();
       MultiBar mb1 = new MultiBar(values1);
       ml.add(mb1);
       MultiBar mb2 = new MultiBar(values2);
@@ -556,19 +556,19 @@ public class ChartController {
       }
       /*
        * Add the chart to the view
-      */
+       */
       EventQueue.invokeLater(new Runnable() {
         public void run() {
           try {
             ChartViewFrameGUI frame = new ChartViewFrameGUI(multibarChart);
           } catch (Exception e) {
-              e.printStackTrace();
+            e.printStackTrace();
           }
         }
       });
     }
     public void horizontalSingleBarMain(ArrayList<Bar> values,
-         String fieldName, ArrayList<Bar> sortedValues,DataSet[] sortedData1) {
+        String fieldName, ArrayList<Bar> sortedValues,DataSet[] sortedData1) {
       final DataSet[] sortedData = sortedData1;
       ArrayList<MultiBar> ml = new ArrayList<MultiBar>();
       MultiBar mb1 = new MultiBar(values);
@@ -580,7 +580,7 @@ public class ChartController {
       int secondaryIncrements = (int) (sortedData[sortedData.length-1].getQuantity()/4);
       int tertiaryIncrements = 10;
       Axis xAxis = new Axis((int) (sortedData[sortedData.length-1].getQuantity()*1), 0,
-            primaryIncrements, secondaryIncrements,tertiaryIncrements, fieldName, "");
+          primaryIncrements, secondaryIncrements,tertiaryIncrements, fieldName, "");
       final MultiBarChartHPanel multibarChart = new MultiBarChartHPanel(ml, xAxis);
       final MultiBarChartHPanel sortedMultibarChart = new MultiBarChartHPanel(m2, xAxis);
       multibarChart.height = 680;
@@ -596,13 +596,13 @@ public class ChartController {
       }
       /*
        * Add the chart to the view
-      */
+       */
       EventQueue.invokeLater(new Runnable() {
         public void run() {
           try {
             ChartViewFrameGUI frame = new ChartViewFrameGUI(multibarChart, sortedData, sortedMultibarChart);
           } catch (Exception e) {
-              e.printStackTrace();
+            e.printStackTrace();
           }
         }
       });
@@ -617,7 +617,7 @@ public class ChartController {
     String title = " ";
     List<String> fieldNameList;
     MultiBarChartHPanel(ArrayList<MultiBar> multibars, Axis axis,
-                                    List<String> fieldNameList) {
+        List<String> fieldNameList) {
       setSize(5000, 5000);
       this.multibars = multibars;
       this.xAxis = axis;
@@ -662,7 +662,7 @@ public class ChartController {
       int width = getSize().width;
       Graphics2D g2d = (Graphics2D) g;
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                           RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       g.drawRect(0, 0, width, height);
       g2d.setColor(backgroundColor);
       g.fillRect(0, 0, width, height);
@@ -675,29 +675,29 @@ public class ChartController {
       g.drawLine(leftOffset, heightChart + topOffset,leftOffset + widthChart, heightChart + topOffset);
       if (this.xAxis.primaryIncrements != 0)
         drawTick(widthChart, heightChart, this.xAxis.primaryIncrements, g,
-                                       Color.BLACK, majorTickHeight);
+            Color.BLACK, majorTickHeight);
       if (this.xAxis.secondaryIncrements != 0)
         drawTick(widthChart, heightChart, this.xAxis.secondaryIncrements,
-                             g, Color.BLACK, secTickHeight);
+            g, Color.BLACK, secTickHeight);
       if (this.xAxis.tertiaryIncrements != 0)
         drawTick(widthChart, heightChart, this.xAxis.tertiaryIncrements, g,
-                                     Color.BLACK, minorTickHeight);
+            Color.BLACK, minorTickHeight);
       drawXLabels(widthChart, heightChart, this.xAxis.primaryIncrements, g,Color.BLACK);
       drawLabels(heightChart, widthChart, g, fieldNameList);
       drawMultiBars(heightChart, widthChart, g);
     }  // end paintComponent
 
     private void drawTick(int widthChart, int heightChart, int increment,
-                                      Graphics g, Color c, int tickHeight) {
+        Graphics g, Color c, int tickHeight) {
       int incrementNo = xAxis.maxValue / increment;
       double factor = ((double) widthChart / (double) xAxis.maxValue);
       double incrementInPixel = (double) (increment * factor);
       g.setColor(c);
       for (int i = 0; i < incrementNo; i++) {
         int fromLeft = widthChart + rightOffset   - (int) (i * incrementInPixel);
-         g.drawLine(((leftOffset - rightOffset) + fromLeft), heightChart
-              + topOffset, ((leftOffset - rightOffset) + fromLeft),
-              heightChart + topOffset + tickHeight);
+        g.drawLine(((leftOffset - rightOffset) + fromLeft), heightChart
+                + topOffset, ((leftOffset - rightOffset) + fromLeft),
+            heightChart + topOffset + tickHeight);
       }
     }
 
@@ -714,7 +714,7 @@ public class ChartController {
         int heightStr = fm.getHeight();
         g.setFont(xCatFont);
         g.drawString(xLabel, (leftOffset - rightOffset) - widthStr / 2
-                          + fromLeft, topOffset + heightChart + (heightStr));
+            + fromLeft, topOffset + heightChart + (heightStr));
       }
     }
 
@@ -748,28 +748,28 @@ public class ChartController {
       if (multibars.size() > 1) {
         for (MultiBar multi : multibars) {
           for (Bar bar : multi.bar) {
-             colorTemp.add(bar.color);
+            colorTemp.add(bar.color);
           }
         }
         g2d.setFont(xFont);
         g2d.setColor(colorTemp.get(0));
         g2d.drawString(fieldNameList.get(0), widthChart / 2 + 2 + 0
-                * leftOffset - xAxisStringWidth / 2, topOffset
-                + heightChart + xLabelOffset + xAxesLabelHeight / 2);
+            * leftOffset - xAxisStringWidth / 2, topOffset
+            + heightChart + xLabelOffset + xAxesLabelHeight / 2);
         g2d.setColor(colorTemp.get(colorTemp.size() - 1));
         g2d.drawString(fieldNameList.get(1), widthChart / 2 + leftOffset
-                  - xAxisStringWidth / 2, topOffset + heightChart
-                  + xLabelOffset + xAxesLabelHeight / 2);
+            - xAxisStringWidth / 2, topOffset + heightChart
+            + xLabelOffset + xAxesLabelHeight / 2);
       } else {
         g2d.setColor(Color.BLACK);
         g2d.setFont(xFont);
         g2d.drawString(xAxisStr, widthChart / 2 + leftOffset
-                      - xAxisStringWidth / 2, topOffset + heightChart
-                      + xLabelOffset + xAxesLabelHeight / 2);
+            - xAxisStringWidth / 2, topOffset + heightChart
+            + xLabelOffset + xAxesLabelHeight / 2);
       }
       g2d.setColor(Color.BLACK);
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                        RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       // title
       g2d.setFont(titleFont);
       int titleX = (leftOffset + rightOffset + widthChart) / 2 - titleStringWidth / 2;
@@ -787,7 +787,7 @@ public class ChartController {
       }
     }
     private void drawBars(ArrayList<Bar> bars, int heightChart, int widthChart,
-                            Graphics g, int barSet, int index) {
+        Graphics g, int barSet, int index) {
       int i = 0;
       int barNumber = bars.size();
       int pointDistance = (int) (heightChart / (barNumber + 1));
@@ -797,8 +797,8 @@ public class ChartController {
         int scaledBarWidth = (int) ((widthChart*(bar.value/100)*1) / xAxis.maxValue);
         g.setColor(bar.color);
         final Shape rect = (Shape) new Rectangle2D.Double(leftOffset, topOffset + (i * pointDistance) + barSet
-                 * barHeight + index * barHeight - (barHeight / 2),
-        scaledBarWidth, barHeight);
+            * barHeight + index * barHeight - (barHeight / 2),
+            scaledBarWidth, barHeight);
         ((Graphics2D) g).fill(rect);
         g.setFont(yCatFont);
         g.setColor(Color.BLACK);
@@ -819,7 +819,7 @@ public class ChartController {
     }
 
     private void drawBarsName(ArrayList<Bar> bars, int heightChart,
-                                     int widthChart, Graphics g) {
+        int widthChart, Graphics g) {
       int i = 0;
       int barNumber = bars.size();
       int pointDistance = (int) (heightChart / (barNumber + 1));
@@ -843,7 +843,7 @@ public class ChartController {
 
   /*
    * Vertical Bar Chart Rendering
-  */
+   */
   public static class BarChartVPanel extends JPanel {
     ArrayList<Bar> bars;
     Axis yAxis;
@@ -888,7 +888,7 @@ public class ChartController {
       heightFactor = getSize().height;
       Graphics2D g2d = (Graphics2D) g;
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                        RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       g.drawRect(0, 0, width, height);
       g2d.setColor(backgroundColor);
       g.fillRect(0, 0, width, height);
@@ -900,11 +900,11 @@ public class ChartController {
       // bottom
       g.drawLine(leftOffset, heightChart + topOffset,leftOffset + widthChart, heightChart + topOffset);
       if (this.yAxis.primaryIncrements != 0)
-                  drawTick(heightChart, this.yAxis.primaryIncrements, g,Color.BLACK,majorTickWidth);
+        drawTick(heightChart, this.yAxis.primaryIncrements, g,Color.BLACK,majorTickWidth);
       if (this.yAxis.secondaryIncrements != 0)
-                  drawTick(heightChart, this.yAxis.secondaryIncrements, g,Color.BLACK, secTickWidth);
+        drawTick(heightChart, this.yAxis.secondaryIncrements, g,Color.BLACK, secTickWidth);
       if (this.yAxis.tertiaryIncrements != 0)
-                  drawTick(heightChart, this.yAxis.tertiaryIncrements, g,Color.BLACK, minorTickWidth);
+        drawTick(heightChart, this.yAxis.tertiaryIncrements, g,Color.BLACK, minorTickWidth);
       drawYLabels(heightChart, this.yAxis.primaryIncrements, g, Color.BLACK);
       drawBars(heightChart, widthChart, g);
       drawLabels(heightChart, widthChart, g);
@@ -934,7 +934,7 @@ public class ChartController {
         int heightStr = fm.getHeight();
         g.setFont(yCatFont);
         g.drawString(yLabel, (leftOffset - yLabelOffset)
-              + (yLabelOffset / 2 - widthStr / 2), fromTop + (heightStr / 2));
+            + (yLabelOffset / 2 - widthStr / 2), fromTop + (heightStr / 2));
       }
     }
 
@@ -949,7 +949,7 @@ public class ChartController {
         int j = topOffset + heightChart - scaledBarHeight;
         g.setColor(bar.color);
         final Shape rect = (Shape) new Rectangle2D.Double(leftOffset + (i * pointDistance) - (barWidth / 2), j,
-                      barWidth, scaledBarHeight);
+            barWidth, scaledBarHeight);
         ((Graphics2D) g).fill(rect);
         // draw tick
         g.drawLine(leftOffset + (i * pointDistance), topOffset
@@ -993,7 +993,7 @@ public class ChartController {
       int translateDown = -leftOffset - (topOffset + heightChart / 2 + yAxisStringWidth / 2);
       // starts off being "topOffset" off, so subtract that first
       int translateLeft = -topOffset + (leftOffset - yLabelOffset) / 2
-               + yAxisStringHeight / 2;
+          + yAxisStringHeight / 2;
       // pull down, which is basically the left offset, topOffset, then middle
       // it by usin chart height and using text height.
       g2d.translate(translateDown, translateLeft);
@@ -1005,9 +1005,9 @@ public class ChartController {
       // x label
       g2d.setFont(xFont);
       g2d.drawString(xAxisStr, widthChart / 2 + leftOffset - xAxisStringWidth
-               / 2, topOffset + heightChart + xLabelOffset + xAxesLabelHeight / 2);
+          / 2, topOffset + heightChart + xLabelOffset + xAxesLabelHeight / 2);
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                             RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       // title
       g2d.setFont(titleFont);
       int titleX = (leftOffset + rightOffset + widthChart) / 2 - titleStringWidth / 2;
@@ -1024,7 +1024,7 @@ public class ChartController {
     String title = " ";
     List<String> fieldNameList;
     public MultiBarChartVPanel(ArrayList<MultiBar> multibars, Axis axis,
-                                     List<String> fieldNameList) {
+        List<String> fieldNameList) {
       this.multibars = multibars;
       this.yAxis = axis;
       this.xAxisStr = axis.xLabel;
@@ -1067,7 +1067,7 @@ public class ChartController {
       int width = getSize().width;
       Graphics2D g2d = (Graphics2D) g;
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                    RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       g.drawRect(0, 0, width, height);
       g2d.setColor(backgroundColor);
       g.fillRect(0, 0, width, height);
@@ -1078,7 +1078,7 @@ public class ChartController {
       g.drawLine(leftOffset, topOffset, leftOffset, heightChart + topOffset);
       // bottom
       g.drawLine(leftOffset, heightChart + topOffset,
-                 leftOffset + widthChart, heightChart + topOffset);
+          leftOffset + widthChart, heightChart + topOffset);
       if (this.yAxis.primaryIncrements != 0)
         drawTick(heightChart, this.yAxis.primaryIncrements, g, Color.BLACK,majorTickWidth);
       if (this.yAxis.secondaryIncrements != 0)
@@ -1096,8 +1096,8 @@ public class ChartController {
       double incrementInPixel = (double) (increment * factor);
       g.setColor(c);
       for (int i = 0; i < incrementNo; i++) {
-         int fromTop = heightChart + topOffset - (int) (i * incrementInPixel);
-         g.drawLine(leftOffset, fromTop, leftOffset + tickWidth, fromTop);
+        int fromTop = heightChart + topOffset - (int) (i * incrementInPixel);
+        g.drawLine(leftOffset, fromTop, leftOffset + tickWidth, fromTop);
       }
     }
 
@@ -1119,7 +1119,7 @@ public class ChartController {
     }
 
     private void drawLabels(int heightChart, int widthChart, Graphics g,
-                                            List<String> fieldNameList) {
+        List<String> fieldNameList) {
       Graphics2D g2d = (Graphics2D) g;
       AffineTransform oldTransform = g2d.getTransform();
       FontMetrics fmY = getFontMetrics(yFont);
@@ -1155,26 +1155,26 @@ public class ChartController {
         g2d.setFont(xFont);
         g2d.setColor(colorTemp.get(0));
         g2d.drawString(fieldNameList.get(0), widthChart / 2 + 2 + 0
-                 * leftOffset - xAxisStringWidth / 2, topOffset
-                 + heightChart + xLabelOffset + xAxesLabelHeight / 2);
+            * leftOffset - xAxisStringWidth / 2, topOffset
+            + heightChart + xLabelOffset + xAxesLabelHeight / 2);
         g2d.setColor(colorTemp.get(colorTemp.size() - 1));
         g2d.drawString(fieldNameList.get(1), widthChart / 2 + leftOffset
-                 - xAxisStringWidth / 2, topOffset + heightChart
-                 + xLabelOffset + xAxesLabelHeight / 2);
+            - xAxisStringWidth / 2, topOffset + heightChart
+            + xLabelOffset + xAxesLabelHeight / 2);
       } else {
         g2d.setColor(Color.BLACK);
         g2d.setFont(xFont);
         g2d.drawString(xAxisStr, widthChart / 2 + leftOffset
-                 - xAxisStringWidth / 2, topOffset + heightChart
-                 + xLabelOffset + xAxesLabelHeight / 2);
+            - xAxisStringWidth / 2, topOffset + heightChart
+            + xLabelOffset + xAxesLabelHeight / 2);
       }
       g2d.setColor(Color.BLACK);
       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                                RenderingHints.VALUE_ANTIALIAS_ON);
+          RenderingHints.VALUE_ANTIALIAS_ON);
       // title
       g2d.setFont(titleFont);
       int titleX = (leftOffset + rightOffset + widthChart) / 2
-              - titleStringWidth / 2;
+          - titleStringWidth / 2;
       int titleY = topOffset / 2 + titleStringHeight / 2;
       g2d.drawString(title, titleX, titleY);
     }
@@ -1190,7 +1190,7 @@ public class ChartController {
     }
 
     private void drawBars(ArrayList<Bar> bars, int heightChart, int widthChart,
-                                         Graphics g, int barSet, int index) {
+        Graphics g, int barSet, int index) {
       int i = 0;
       int barNumber = bars.size();
       int pointDistance = (int) (widthChart / (barNumber + 1));
@@ -1201,11 +1201,11 @@ public class ChartController {
         int j = topOffset + heightChart - scaledBarHeight;
         g.setColor(bar.color);
         final Shape rect = (Shape) new Rectangle2D.Double(leftOffset + (i * pointDistance) + barSet / 4 * barWidth
-                                   + index * barWidth, j, barWidth, scaledBarHeight);
+            + index * barWidth, j, barWidth, scaledBarHeight);
         ((Graphics2D) g).fill(rect);
         // draw tick
         g.drawLine(leftOffset + (i * pointDistance), topOffset
-              + heightChart, leftOffset + (i * pointDistance), topOffset + heightChart + 2);
+            + heightChart, leftOffset + (i * pointDistance), topOffset + heightChart + 2);
         g.setFont(xCatFont);
         g.setColor(Color.BLACK);
         addMouseMotionListener(new MouseMotionListener() {
@@ -1224,7 +1224,7 @@ public class ChartController {
     }
 
     private void drawBarsName(ArrayList<Bar> bars, int heightChart,
-      int widthChart, Graphics g) {
+        int widthChart, Graphics g) {
       int i = 0;
       int barNumber = bars.size();
       int pointDistance = (int) (widthChart / (barNumber + 1));
@@ -1242,5 +1242,5 @@ public class ChartController {
     }
   }  // end multiBarChartVPanel
 
-  
+
 }

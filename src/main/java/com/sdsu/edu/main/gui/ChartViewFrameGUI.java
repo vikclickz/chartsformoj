@@ -2,13 +2,6 @@ package com.sdsu.edu.main.gui;
 
 import com.sdsu.edu.main.VerticalBarLegendPanel;
 import com.sdsu.edu.main.controller.ChartController;
-import com.sdsu.edu.main.controller.ChartController.Axis;
-import com.sdsu.edu.main.controller.ChartController.Bar;
-import com.sdsu.edu.main.controller.ChartController.BarChartVPanel;
-import com.sdsu.edu.main.controller.ChartController.DataSet;
-import com.sdsu.edu.main.controller.ChartController.MultiBar;
-import com.sdsu.edu.main.controller.ChartController.MultiBarChartHPanel;
-import com.sdsu.edu.main.controller.ChartController.MultiBarChartVPanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -29,6 +22,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.imageio.ImageIO;
 import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.print.attribute.PrintRequestAttributeSet;
@@ -42,10 +36,18 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import com.sdsu.edu.main.controller.ChartController.Axis;
+import com.sdsu.edu.main.controller.ChartController.Bar;
+import com.sdsu.edu.main.controller.ChartController.BarChartVPanel;
+import com.sdsu.edu.main.controller.ChartController.DataSet;
+import com.sdsu.edu.main.controller.ChartController.MultiBar;
+import com.sdsu.edu.main.controller.ChartController.MultiBarChartHPanel;
+import com.sdsu.edu.main.controller.ChartController.MultiBarChartVPanel;
+
 /*
  * Finally present in a GUi where user can sort and re render, print,
  * change the title, x-axis and y-axis label
-*/
+ */
 public class ChartViewFrameGUI extends JFrame implements ActionListener {
   private JPanel contentPane;
   boolean sortflag = false;
@@ -210,7 +212,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
    * Create the frame. VERTICAL SINGLE BAR CHART
    */
   public ChartViewFrameGUI(final ChartController.DataSet[] data, final ChartController.DataSet[] sortedData,
-      final ArrayList<Bar> values, final ArrayList<Bar> sortedValues, final String fieldName) {
+      final ArrayList<ChartController.Bar> values, final ArrayList<ChartController.Bar> sortedValues, final String fieldName) {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(200, 200, 700, 400);
     contentPane = new JPanel();
@@ -245,7 +247,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
     contentPane.add(splitPane, BorderLayout.CENTER);
     /**
      * Top Include label, button and a field to change the Title, xAxis label and yAxis label
-     * 
+     *
      */
     // create a button print the chart
     printBtn = new JButton("Print Chart");
@@ -334,7 +336,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
         contentPane.add(splitPane, BorderLayout.CENTER);
         /**
          * Top Include label, button and a field to change the Title, xAxis label and yAxis label
-         * 
+         *
          */
         // create a button to print the chart
         printBtn = new JButton("Print Chart");
@@ -438,7 +440,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
             /**
              * Top Include label, button and a field to change the Title, xAxis label and yAxis
              * label
-             * 
+             *
              */
             // create a button to print the chart
             printBtn = new JButton("Print Chart");
@@ -677,7 +679,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
     contentPane.add(splitPane, BorderLayout.CENTER);
     /**
      * Top Include label, button and a field to change the Title
-     * 
+     *
      */
     // create a button to change the title of the chart
     printBtn = new JButton("Print Chart");
@@ -768,7 +770,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
         contentPane.add(splitPane, BorderLayout.CENTER);
         /**
          * Top Include label, button and a field to change the Title
-         * 
+         *
          */
         // create a button to print the chart
         printBtn = new JButton("Print Chart");
@@ -848,7 +850,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
     contentPane.add(chart1, BorderLayout.CENTER);
     /**
      * Top Include label, button and a field to change the Title
-     * 
+     *
      */
     // create a button to print the chart
     printBtn = new JButton("Print Chart");
@@ -900,7 +902,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
     contentPane.add(chart1, BorderLayout.CENTER);
     /**
      * Top Include label, button and a field to change the Title
-     * 
+     *
      */
     // create a button to print the chart
     printBtn = new JButton("Print Chart");
@@ -963,7 +965,7 @@ public class ChartViewFrameGUI extends JFrame implements ActionListener {
     contentPane.add(sortedChart1, BorderLayout.CENTER);
     /**
      * Top Include label, button and a field to change the Title
-     * 
+     *
      */
     // create a button to print the chart
     printBtn = new JButton("Print Chart");

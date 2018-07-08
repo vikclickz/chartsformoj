@@ -10,7 +10,9 @@ import java.awt.geom.Rectangle2D;
 import java.awt.print.PageFormat;
 import java.awt.print.PrinterException;
 import java.awt.print.PrinterJob;
+
 import javax.swing.JOptionPane;
+
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 
@@ -23,7 +25,7 @@ public class PrintUtility extends ChartPanel {
     super(chart);
   }
 
-  public void paintComponent(Graphics g) {
+  public void paintComponent(java.awt.Graphics g) {
     super.paintComponent(g);
     drawAdditionalStuff(g, getScreenDataArea());
   }
