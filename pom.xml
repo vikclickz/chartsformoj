@@ -6,7 +6,7 @@
 
   <groupId>com.sdsu.edu</groupId>
   <artifactId>charts-for-moj</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -23,23 +23,23 @@
       <version>1.0.19</version>
     </dependency>
 
-    <dependency>
-      <groupId>com.esri.mo2</groupId>
-      <artifactId>esri_mo20</artifactId>
-      <version>1</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>com.esri.mo2</groupId>-->
+      <!--<artifactId>esri_mo20</artifactId>-->
+      <!--<version>1</version>-->
+    <!--</dependency>-->
 
-    <dependency>
-      <groupId>com.esri.mo2</groupId>
-      <artifactId>esri_mo20res</artifactId>
-      <version>1</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>com.esri.mo2</groupId>-->
+      <!--<artifactId>esri_mo20res</artifactId>-->
+      <!--<version>1</version>-->
+    <!--</dependency>-->
 
-    <dependency>
-      <groupId>com.esri.mo2</groupId>
-      <artifactId>esri_mo20img</artifactId>
-      <version>1</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>com.esri.mo2</groupId>-->
+      <!--<artifactId>esri_mo20img</artifactId>-->
+      <!--<version>1</version>-->
+    <!--</dependency>-->
 
     <dependency>
       <groupId>junit</groupId>

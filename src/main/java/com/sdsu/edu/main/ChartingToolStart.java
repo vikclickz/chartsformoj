@@ -41,7 +41,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 /*
  * Charting Tool Facility: Thesis
  */
-class ChartingToolStart {
+public class ChartingToolStart {
 
   /*
    * The Chart GUI for selecting Pie or Bar, and respective choices to chart

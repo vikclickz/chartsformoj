@@ -46,21 +46,6 @@ public class MapObjectChartController {
 
   public void createPolynomialRegressionChart(List<String> xAxisSelectedList,
       List<String> yAxisSelectedList, Integer order) {
-//    String yAxisLabel = selectedFields.get(0);
-//
-//    ChartModel chartModel = buildChartModel(selectedFields, xAxisLabel,
-//        POLYNOMIAL_REGRESSION_CHART, yAxisLabel);
-//
-//    String title = xAxisLabel + " vs " + yAxisLabel;
-//
-//    JFreeChart chart = ChartFactory.createScatterPlot(title,
-//        xAxisLabel, yAxisLabel, chartModel.getXyDataset());
-//
-//    XYPlot plot = (XYPlot) chart.getPlot();
-//    plot.setBackgroundPaint(Color.WHITE);
-//    plot.setDomainAxis(chartModel.getDomainAxis());
-//    ChartPanel panel = new ChartPanel(chart);
-//    chartViewController.displayChart(panel, title);
 
     String independentVar = yAxisSelectedList.get(0);
     String dependentVar = xAxisSelectedList.get(0);
